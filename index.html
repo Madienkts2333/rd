@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Đọc Truyện</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/modal.css"> <!-- Thêm modal CSS -->
+</head>
+<body>
+    <header>
+        <h1>Truyện online</h1>
+    </header>
+    <div class= "home-menu" >
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Trang chủ</a>
+            <a href="#">Thể loại</a>
+            <a href="#">Truyện mới</a>
+            <a href="login.html">Đăng Nhập</a>
+        </div>
+        
+        <nav>
+
+            <div class="max-width">
+
+                <span class="responsive-nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                  <ul class="menu">
+
+                    <a href="index.html">
+                        <li>Trang chủ</li>
+                    </a>
+
+                    <a href="#">
+                        <li>Thể loại</li>
+                    </a>
+
+                    <a href="#">
+                        <li>Truyện mới</li>
+                    </a>
+
+                    <a href="#">
+                        <li>Đăng Nhập</li>
+                    </a>
+                
+                </ul>
+
+                <div></div>
+                
+            </div>
+        </nav>
+
+        <div id="blackline"></div>
+
+    </div>
+
+    <main>
+        <section id="featured">
+            <h2>Truyện nổi bật</h2>
+            <div class="comics-container">
+                <!-- Truyện sẽ được thêm ở đây bằng JavaScript -->
+                <div class="comic" data-title="TÔI THĂNG CẤP MỘT MÌNH" data-author="Tác giả A" data-chapter="200" data-description='    10 năm trước, sau “Cánh cổng” kết nối thế giới thực với thế giới quái vật mở ra, một số người bình thường, hàng ngày nhận được sức mạnh để săn 
+                quái vật trong Cánh cổng.
+                Chúng được gọi là "Thợ săn". Tuy nhiên, không phải tất cả Hunters đều mạnh mẽ.
+                Tên tôi là Sung Jin Woo, một Hunter hạng E. Tôi là người phải mạo hiểm mạng sống của mình trong các ngục tối thấp nhất, "Thế giới yếu nhất". Không có kỹ năng nào để hiển thị, tôi chỉ kiếm được số tiền cần thiết bằng cách chiến đấu trong ngục tối cấp thấp… ít nhất là cho đến khi tôi tìm thấy một dungeon ẩn với khó khăn khó nhất trong ngục tối hạng D! Cuối cùng, khi tôi chấp nhận cái chết, tôi đột nhiên nhận được một sức mạnh kỳ lạ, một nhật ký tìm kiếm mà tôi chỉ có thể thấy, một bí mật để tăng cấp mà tôi chỉ biết! Nếu tôi được huấn luyện phù hợp với nhiệm vụ và quái vật bị săn đuổi, cấp độ của tôi sẽ tăng lên. Thay đổi từ Hunter yếu nhất sang Hunter cấp S mạnh nhất!' data-link="reading-page.html?comic=1">
+                    <img src="assets/images/SOLO-LEVELING.png" alt="TÔI THĂNG CẤP MỘT MÌNH">
+                    <h3>TÔI THĂNG CẤP MỘT MÌNH</h3>
+                </div>
+                <div class="comic" data-title="TOÀN TRÍ ĐỘC GIẢ" data-author="Tác giả B" data-chapter="210" data-description="Chỉ mình tôi mới biết được kết cục của thế giới này.
+                Vào một ngày nọ, nhân vật chính của chúng ta bị kẹt trong thế giới của bộ tiểu thuyết mà anh ấy yêu thích. Anh ấy sẽ làm gì để sống sót? Khi mà thế giới đó là nơi ngập tràn tai ương và hiểm nguy.
+                Năng lực của anh ấy? Anh ấy biết mọi tình tiết của câu chuyện cho đến kết thúc. Bởi vì anh ấy là độc giả duy nhất của nó.
+                Hãy đọc truyện để biết được anh ấy sống sót như thế nào." data-link="reading-page.html?comic=2">
+                    <img src="assets/images/TOÀN TRÍ ĐỘC GIẢ.jpg" alt="TOÀN TRÍ ĐỘC GIẢ">
+                    <h3>TOÀN TRÍ ĐỘC GIẢ</h3>
+                </div>
+                <div class="comic" data-title="THANH GƯƠM DIỆT QUỶ" data-author="Gotouge Koyoharu" data-chapter="220" data-description="Tanjirou là con cả của gia đình vừa mất cha. Một ngày nọ, Tanjirou đến thăm thị trấn khác để bán than, khi đêm về cậu ở nghỉ tại nhà người khác thay vì về nhà vì lời đồn thổi về ác quỷ luôn rình mò gần núi vào buổi tối. Khi cậu về nhà vào ngày hôm sau, bị kịch đang đợi chờ cậu…" data-link="reading-page.html?comic=3">
+                    <img src="assets/images/THANH GƯƠM DIỆT QUỶ.jpg" alt="THANH GƯƠM DIỆT QUỶ">
+                    <h3>THANH GƯƠM DIỆT QUỶ</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="latest">
+            <h2>Truyện mới cập nhật</h2>
+            <div class="comics-container">
+                <!-- Truyện sẽ được thêm ở đây bằng JavaScript -->
+                <div class="comic" data-title="Truyện 4" data-author="Tác giả D" data-chapter="00" data-description="Mô tả truyện 4">
+                    <img src="link-to-image4.jpg" alt="Truyện 4">
+                    <h3>Truyện 4</h3>
+                </div>
+                <div class="comic" data-title="Truyện 5" data-author="Tác giả E" data-chapter="00" data-description="Mô tả truyện 5">
+                    <img src="link-to-image5.jpg" alt="Truyện 5">
+                    <h3>Truyện 5</h3>
+                </div>
+                <div class="comic" data-title="Truyện 6" data-author="Tác giả F" data-chapter="00" data-description="Mô tả truyện 6">
+                    <img src="link-to-image6.jpg" alt="Truyện 6">
+                    <h3>Truyện 6</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trang Web Đọc Truyện</p>
+    </footer>
+    
+    <!-- Modal -->
+    <div id="comic-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-author"></p>
+            <p id="modal-chapter"></p>
+            <p id="modal-description"></p>
+            <button id="read-button">Đọc truyện</button>
+        </div>
+    </div>
+
+    <button id="toTop" onclick="scrollToTop()"> Top </button>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/modal.js"></script>
+</body>
+</html>
