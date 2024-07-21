@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Đọc Truyện</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Truyện online</h1>
+    </header>
+
+    <div class= "home-menu" >
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="logout.html">Trang chủ</a>
+            <a href="#">Thể loại</a>
+            <a href="#">Truyện mới</a>
+            <a href="index.html">Đăng xuất</a>
+        </div>
+        
+        <nav>
+
+            <div class="max-width">
+
+                <span class="responsive-nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                  <ul class="menu">
+                    <a href="logout.html"><li>Trang chủ</li></a>
+                    <a href="#"><li>Thể loại</li></a>
+                    <a href="#"><li>Truyện mới</li></a>
+                    <a href="index.html"><li>Đăng xuất</li></a>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <div id="blackline"></div>
+
+    </div>
+
+    <main>
+        <section id="featured">
+            <h2>Truyện nổi bật</h2>
+            <div class="comics-container">
+                <!-- Truyện sẽ được thêm ở đây bằng JavaScript -->
+            </div>
+        </section>
+
+        <section id="latest">
+            <h2>Truyện mới cập nhật</h2>
+            <div class="comics-container">
+                <!-- Truyện sẽ được thêm ở đây bằng JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trang Web Đọc Truyện</p>
+    </footer>
+
+    <button id="toTop" onclick="scrollToTop()"> ↑ </button>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đọc Truyện</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Truyện online</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Thể loại</a></li>
+                <li><a href="#">Truyện mới</a></li>
+                <li><a href="login.html">Đăng Nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2 id="comic-title"></h2>
+            <p id="comic-content">Nội dung truyện sẽ được hiển thị ở đây.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trang Web Đọc Truyện</p>
+    </footer>
+
+    <script>
+        // Lấy tham số từ URL để xác định truyện
+        const urlParams = new URLSearchParams(window.location.search);
+        const comicId = urlParams.get('comic');
+
+        // Dữ liệu mẫu cho các truyện
+        const comicsData = {
+            1: {
+                title: 'TÔI THĂNG CẤP MỘT MÌNH',
+                content: 'Nội dung truyện 1...'
+            },
+            2: {
+                title: 'Truyện 2',
+                content: 'Nội dung truyện 2...'
+            },
+            3: {
+                title: 'Truyện 3',
+                content: 'Nội dung truyện 3...'
+            },
+            4: {
+                title: 'Truyện 4',
+                content: 'Nội dung truyện 4...'
+            },
+            5: {
+                title: 'Truyện 5',
+                content: 'Nội dung truyện 5...'
+            },
+            6: {
+                title: 'Truyện 6',
+                content: 'Nội dung truyện 6...'
+            }
+        };
+
+        // Hiển thị nội dung truyện tương ứng
+        const comic = comicsData[comicId];
+        if (comic) {
+            document.getElementById('comic-title').innerText = comic.title;
+            document.getElementById('comic-content').innerText = comic.content;
+        } else {
+            document.getElementById('comic-title').innerText = 'Truyện không tìm thấy';
+            document.getElementById('comic-content').innerText = '';
+        }
+    </script>
+</body>
+</html>
